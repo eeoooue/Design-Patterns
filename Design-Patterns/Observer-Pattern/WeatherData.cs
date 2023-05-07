@@ -10,7 +10,6 @@ namespace Observer_Pattern
 {
     internal class WeatherData
     {
-
         private WeatherDisplay CurrentConditions = new CurrentConditionsDisplay();
         private WeatherDisplay Forecast = new ForecastDisplay();
         private WeatherDisplay Statistics = new StatisticsDisplay();
