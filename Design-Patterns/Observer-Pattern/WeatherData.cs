@@ -10,33 +10,21 @@ namespace Observer_Pattern
 {
     internal class WeatherData : Subject
     {
-
         private List<Observer> _observers = new List<Observer>();
 
-        public float GetTemperature()
-        {
-            return 20f;
-        }
+        public float Humidity { get; private set; }
+        public float Pressure { get; private set; }
+        public float Temperature { get; private set; }
 
-        public float GetHumidity()
-        {
-            return 11f;
-        }
-
-        public float GetPressure()
-        {
-            return 2f;
-        }
-
-        public void MeasurementsChanged()
+        public void MeasurementsChanged(float humidity, float pressure, float temperature)
         {
             //This method gets called
             //whenever the weather measurements
             //have been updated
 
-            float temperature = GetTemperature();
-            float humidity = GetHumidity();
-            float pressure = GetPressure();
+            Humidity = humidity;
+            Pressure = pressure;
+            Temperature = temperature;
 
             NotifyObservers();
         }
