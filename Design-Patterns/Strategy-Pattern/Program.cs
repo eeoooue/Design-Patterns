@@ -14,7 +14,11 @@ namespace Strategy_Pattern
 
             foreach(Duck duck in ducks)
             {
+                Console.WriteLine();
                 duck.Display();
+                duck.Quack();
+                duck.Swim();
+                duck.Fly();
             }
         }
     }
