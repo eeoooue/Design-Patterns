@@ -8,11 +8,10 @@ using System.Threading.Tasks;
 
 namespace Observer_Pattern
 {
-    internal class WeatherData
+    internal class WeatherData : Subject
     {
-        private WeatherDisplay CurrentConditions = new CurrentConditionsDisplay();
-        private WeatherDisplay Forecast = new ForecastDisplay();
-        private WeatherDisplay Statistics = new StatisticsDisplay();
+
+        private List<Observer> _observers = new List<Observer>();
 
         public float GetTemperature()
         {
@@ -39,9 +38,25 @@ namespace Observer_Pattern
             float humidity = GetHumidity();
             float pressure = GetPressure();
 
-            CurrentConditions.Update(temperature, humidity, pressure);
-            Forecast.Update(temperature, humidity, pressure);
-            Statistics.Update(temperature, humidity, pressure);
+            NotifyObservers();
+        }
+
+        public void RegisterObserver(Observer observer)
+        {
+            _observers.Add(observer);
+        }
+
+        public void RemoveObserver(Observer observer)
+        {
+            _observers.Remove(observer);
+        }
+
+        public void NotifyObservers()
+        {
+            foreach(Observer observer in _observers)
+            {
+                observer.Update();
+            }
         }
     }
 }

@@ -8,6 +8,6 @@ namespace Observer_Pattern
 {
     interface Observer
     {
-        void Update();
+        public void Update();
     }
 }
