@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Observer_Pattern.WeatherDisplays
 {
-    internal class CurrentConditionsDisplay : Observer
+    internal class CurrentConditionsDisplay : Display, Observer
     {
         private WeatherData _subject;
 
@@ -17,11 +17,20 @@ namespace Observer_Pattern.WeatherDisplays
         public CurrentConditionsDisplay(WeatherData subject)
         {
             _subject = subject;
+            subject.RegisterObserver(this);
+        }
+
+        public void Display()
+        {
+            Console.WriteLine($"Current Conditions: [ {_temperature}°C | {_pressure} pressure | {_humidity} humidity ]");
         }
 
         public void Update()
         {
-            throw new NotImplementedException();
+            _humidity = _subject.Humidity;
+            _pressure = _subject.Pressure;
+            _temperature = _subject.Temperature;
+            Display();
         }
     }
 }

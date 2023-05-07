@@ -16,16 +16,18 @@ namespace Observer_Pattern
         public float Pressure { get; private set; }
         public float Temperature { get; private set; }
 
-        public void MeasurementsChanged(float humidity, float pressure, float temperature)
+        public void SetMeasurements(float humidity, float pressure, float temperature)
         {
-            //This method gets called
-            //whenever the weather measurements
-            //have been updated
-
             Humidity = humidity;
             Pressure = pressure;
             Temperature = temperature;
 
+            MeasurementsChanged();
+        }
+
+        private void MeasurementsChanged()
+        {
+            Console.WriteLine($"The weather station's measurements were changed!");
             NotifyObservers();
         }
 
