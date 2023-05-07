@@ -8,9 +8,18 @@ namespace Strategy_Pattern
 {
     abstract class Duck
     {
+        public QuackBehaviour _quackBehaviour;
+        public FlyBehaviour _flyBehaviour;
+
+        public Duck(QuackBehaviour quackBehaviour, FlyBehaviour flyBehaviour)
+        {
+            _quackBehaviour = quackBehaviour;
+            _flyBehaviour = flyBehaviour;
+        }
+
         public void Quack()
         {
-            Console.WriteLine($"Quack, said the duck.");
+            _quackBehaviour.Quack();
         }
 
         public void Swim()
@@ -20,7 +29,7 @@ namespace Strategy_Pattern
 
         public void Fly()
         {
-            Console.WriteLine($"The duck flew!");
+            _flyBehaviour.Fly();
         }
 
         public abstract void Display();
