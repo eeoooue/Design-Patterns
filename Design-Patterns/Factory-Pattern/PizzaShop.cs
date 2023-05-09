@@ -9,27 +9,16 @@ namespace Factory_Pattern
 {
     internal class PizzaShop
     {
+        private SimplePizzaFactory _factory;
 
+        public PizzaShop(SimplePizzaFactory factory)
+        {
+            _factory = factory;
+        }
 
         public Pizza OrderPizza(string type)
         {
-            Pizza pizza;
-            if (type == "cheese")
-            {
-                pizza = new CheesePizza();
-            }
-            else if (type == "pepperoni")
-            {
-                pizza = new PepperoniPizza();
-            }
-            else if (type == "clam")
-            {
-                pizza = new ClamPizza();
-            }
-            else
-            {
-                pizza = new VeggiePizza();
-            }
+            Pizza pizza = _factory.CreatePizza(type);
 
             pizza.Prepare();
             pizza.Bake();
