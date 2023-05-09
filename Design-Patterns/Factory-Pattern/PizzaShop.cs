@@ -18,13 +18,17 @@ namespace Factory_Pattern
             {
                 pizza = new CheesePizza();
             }
-            else if (type == "greek")
+            else if (type == "pepperoni")
             {
-                pizza = new GreekPizza();
+                pizza = new PepperoniPizza();
+            }
+            else if (type == "clam")
+            {
+                pizza = new ClamPizza();
             }
             else
             {
-                pizza = new PepperoniPizza();
+                pizza = new VeggiePizza();
             }
 
             pizza.Prepare();
