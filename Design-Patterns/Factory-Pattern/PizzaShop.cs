@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Factory_Pattern.Pizzas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,21 @@ namespace Factory_Pattern
     {
 
 
-        public Pizza OrderPizza()
+        public Pizza OrderPizza(string type)
         {
-            Pizza pizza = new Pizza();
+            Pizza pizza;
+            if (type == "cheese")
+            {
+                pizza = new CheesePizza();
+            }
+            else if (type == "greek")
+            {
+                pizza = new GreekPizza();
+            }
+            else
+            {
+                pizza = new PepperoniPizza();
+            }
 
             pizza.Prepare();
             pizza.Bake();
