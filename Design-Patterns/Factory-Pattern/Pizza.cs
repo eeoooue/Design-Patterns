@@ -9,6 +9,13 @@ namespace Factory_Pattern
     internal class Pizza
     {
 
+        public string _style;
+
+        public Pizza(string style)
+        {
+            _style = style;
+        }
+
         public void Prepare()
         {
             

@@ -8,5 +8,6 @@ namespace Factory_Pattern.Pizzas
 {
     internal class PepperoniPizza : Pizza
     {
+        public PepperoniPizza(string style) : base(style) { }
     }
 }
