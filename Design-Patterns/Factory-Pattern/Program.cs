@@ -13,14 +13,13 @@
 
             TryOrderPizza(chicagoStore, "cheese");
             TryOrderPizza(newYorkStore, "cheese");
-
         }
 
         static void TryOrderPizza(PizzaShop store, string type)
         {
             Pizza myPizza = store.OrderPizza(type);
 
-            Console.WriteLine($"I ordered a pizza & recieved a {myPizza._style} style pizza");
+            Console.WriteLine($"I ordered a pizza & received a {myPizza._style} style pizza");
         }
     }
 }
