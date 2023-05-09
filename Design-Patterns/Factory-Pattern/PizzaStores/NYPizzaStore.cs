@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Factory_Pattern
+namespace Factory_Pattern.PizzaStores
 {
-    internal class NYPizzaFactory : SimplePizzaFactory
+    internal class NYPizzaStore : PizzaStore
     {
         public override Pizza CreatePizza(string type)
         {
@@ -32,7 +32,5 @@ namespace Factory_Pattern
 
             return pizza;
         }
-
-
     }
 }

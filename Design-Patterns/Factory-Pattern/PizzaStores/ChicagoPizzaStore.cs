@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Factory_Pattern
+namespace Factory_Pattern.PizzaStores
 {
-    internal class ChicagoPizzaFactory : SimplePizzaFactory
+    internal class ChicagoPizzaStore : PizzaStore
     {
         public override Pizza CreatePizza(string type)
         {

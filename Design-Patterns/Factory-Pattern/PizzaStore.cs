@@ -7,18 +7,15 @@ using System.Threading.Tasks;
 
 namespace Factory_Pattern
 {
-    internal class PizzaShop
+    abstract class PizzaStore
     {
-        private SimplePizzaFactory _factory;
+        public PizzaStore() { }
 
-        public PizzaShop(SimplePizzaFactory factory)
-        {
-            _factory = factory;
-        }
+        public abstract Pizza CreatePizza(string type);
 
         public Pizza OrderPizza(string type)
         {
-            Pizza pizza = _factory.CreatePizza(type);
+            Pizza pizza = CreatePizza(type);
 
             pizza.Prepare();
             pizza.Bake();
