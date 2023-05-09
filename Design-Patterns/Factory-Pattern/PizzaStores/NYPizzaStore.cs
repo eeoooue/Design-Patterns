@@ -9,7 +9,7 @@ namespace Factory_Pattern.PizzaStores
 {
     internal class NYPizzaStore : PizzaStore
     {
-        public override Pizza CreatePizza(string type)
+        protected override Pizza CreatePizza(string type)
         {
             Pizza pizza;
 

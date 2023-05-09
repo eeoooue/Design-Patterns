@@ -11,7 +11,7 @@ namespace Factory_Pattern
     {
         public PizzaStore() { }
 
-        public abstract Pizza CreatePizza(string type);
+        protected abstract Pizza CreatePizza(string type);
 
         public Pizza OrderPizza(string type)
         {
