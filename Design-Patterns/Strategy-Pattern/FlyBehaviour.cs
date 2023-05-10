@@ -10,4 +10,20 @@ namespace Strategy_Pattern
     {
         void Fly();
     }
+
+    internal class FlyWithWings : FlyBehaviour
+    {
+        public void Fly()
+        {
+            Console.WriteLine($"The duck flew!");
+        }
+    }
+
+    internal class FlyNoWay : FlyBehaviour
+    {
+        public void Fly()
+        {
+            Console.WriteLine($"The duck can't fly.");
+        }
+    }
 }

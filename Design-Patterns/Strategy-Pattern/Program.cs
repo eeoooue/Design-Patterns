@@ -1,5 +1,4 @@
-﻿using Strategy_Pattern.Ducks;
-
+﻿
 namespace Strategy_Pattern
 {
     internal class Program

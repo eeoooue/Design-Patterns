@@ -34,4 +34,34 @@ namespace Strategy_Pattern
 
         public abstract void Display();
     }
+
+    internal class RedheadDuck : Duck
+    {
+        public RedheadDuck() : base(new Quacking(), new FlyWithWings()) { }
+
+        public override void Display()
+        {
+            Console.WriteLine($"Look, it's a Redhead duck!");
+        }
+    }
+
+    internal class MallardDuck : Duck
+    {
+        public MallardDuck() : base(new Quacking(), new FlyWithWings()) { }
+
+        public override void Display()
+        {
+            Console.WriteLine($"Look, it's a Mallard duck!");
+        }
+    }
+
+    internal class RubberDuck : Duck
+    {
+        public RubberDuck() : base(new Squeak(), new FlyNoWay()) { }
+
+        public override void Display()
+        {
+            Console.WriteLine($"Look, it's a Rubber duck!");
+        }
+    }
 }
