@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Strategy_Pattern
+namespace Duck_Behaviours
 {
     abstract class Duck
     {
