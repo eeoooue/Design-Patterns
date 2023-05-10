@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Factory_Pattern
+namespace Pizza_Stores
 {
     internal class Pizza
     {
@@ -18,22 +18,22 @@ namespace Factory_Pattern
 
         public void Prepare()
         {
-            
+
         }
 
         public void Bake()
         {
-            
+
         }
 
         public void Cut()
         {
-            
+
         }
 
         public void Box()
         {
-            
+
         }
     }
 
