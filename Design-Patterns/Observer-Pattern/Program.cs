@@ -1,13 +1,9 @@
-﻿using Observer_Pattern.WeatherDisplays;
-
-namespace Observer_Pattern
+﻿namespace Observer_Pattern
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            
-
             List<Display> displays = new List<Display>();
 
             WeatherData station = new WeatherData();
@@ -19,7 +15,6 @@ namespace Observer_Pattern
             station.SetMeasurements(10, 10, 10);
             station.SetMeasurements(20, 10, 29);
             station.SetMeasurements(10, 30, 10);
-
         }
     }
 }
