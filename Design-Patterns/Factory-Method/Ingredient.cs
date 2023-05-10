@@ -10,4 +10,21 @@ namespace Factory_Method
     {
 
     }
+
+    internal class Turkey : Ingredient
+    {
+    }
+
+    internal class Mayonnaise : Ingredient
+    {
+    }
+
+    internal class Lettuce : Ingredient
+    {
+    }
+
+    internal class Bread : Ingredient
+    {
+
+    }
 }

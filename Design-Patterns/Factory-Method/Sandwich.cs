@@ -19,4 +19,34 @@ namespace Factory_Method
 
         public abstract void CreateIngredients();
     }
+
+    internal class TurkeySandwich : Sandwich
+    {
+        public override void CreateIngredients()
+        {
+            Ingredients.Add(new Bread());
+            Ingredients.Add(new Mayonnaise());
+            Ingredients.Add(new Turkey());
+            Ingredients.Add(new Turkey());
+            Ingredients.Add(new Lettuce());
+            Ingredients.Add(new Bread());
+        }
+    }
+
+    internal class Dagwood : Sandwich
+    {
+        public override void CreateIngredients()
+        {
+            Ingredients.Add(new Bread());
+
+            for (int i = 0; i < 6; i++)
+            {
+                Ingredients.Add(new Mayonnaise());
+                Ingredients.Add(new Turkey());
+                Ingredients.Add(new Turkey());
+                Ingredients.Add(new Lettuce());
+                Ingredients.Add(new Bread());
+            }
+        }
+    }
 }
