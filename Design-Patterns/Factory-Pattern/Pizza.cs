@@ -36,4 +36,29 @@ namespace Factory_Pattern
             
         }
     }
+
+    internal class CheesePizza : Pizza
+    {
+        public CheesePizza(string style) : base(style) { }
+    }
+
+    internal class ClamPizza : Pizza
+    {
+        public ClamPizza(string style) : base(style) { }
+    }
+
+    internal class GreekPizza : Pizza
+    {
+        public GreekPizza(string style) : base(style) { }
+    }
+
+    internal class PepperoniPizza : Pizza
+    {
+        public PepperoniPizza(string style) : base(style) { }
+    }
+
+    internal class VeggiePizza : Pizza
+    {
+        public VeggiePizza(string style) : base(style) { }
+    }
 }
