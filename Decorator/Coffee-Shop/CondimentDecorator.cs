@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Decorator_Pattern
+namespace Coffee_Shop
 {
     abstract internal class CondimentDecorator : Beverage
     {

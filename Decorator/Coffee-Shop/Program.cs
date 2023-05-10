@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Beverage myCoffee = new HouseBlend();
+
+            myCoffee = new Milk(myCoffee);
+            myCoffee = new Whip(myCoffee);
+
+            Console.WriteLine($"{myCoffee.GetDescription()} for {myCoffee.Cost()}");
         }
     }
 }
