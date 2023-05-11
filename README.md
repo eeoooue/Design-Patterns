@@ -4,30 +4,42 @@ Learning the 'Gang of Four' design patterns.
 
 ## Progress
 
+### Group I
+
 | Pattern | Category | Attempts |
 | ----- | ----- | ----- |
 | Abstract Factory | ```Creational``` |  |
-| Adapter | ```Structural``` |  |
-| Builder | ```Creational``` |  |
-| Bridge | ```Structural``` |  |
-| Chain of Responsibility | ```Behavioral``` |  |
-| Command | ```Behavioral``` |  |
-| Composite | ```Structural``` |  |
+| Factory Method | ```Creational``` | ⦿ ⦿ |
 | Decorator | ```Structural``` | ⦿ ⦿ |
 | Facade | ```Structural``` |  |
-| Factory Method | ```Creational``` | ⦿ ⦿ |
-| Flyweight | ```Structural``` |  |
-| Interpreter | ```Behavioral``` |  |
 | Iterator | ```Behavioral``` |  |
-| Mediator | ```Behavioral``` |  |
-| Memento | ```Behavioral``` |  |
 | Observer | ```Behavioral``` | ⦿ |
-| Prototype | ```Creational``` |  |
-| Proxy | ```Structural``` |  |
-| Singleton | ```Creational``` |  |
-| State | ```Behavioral``` |  |
 | Strategy | ```Behavioral``` | ⦿ ⦿ |
 | Template Method | ```Behavioral``` |  |
+
+### Group II
+
+| Pattern | Category | Attempts |
+| ----- | ----- | ----- |
+| Singleton | ```Creational``` |  |
+| Prototype | ```Creational``` |  |
+| Composite | ```Structural``` |  |
+| Proxy | ```Structural``` |  |
+| Mediator | ```Behavioral``` |  |
+| Memento | ```Behavioral``` |  |
+| State | ```Behavioral``` |  |
+
+### Group III
+
+| Pattern | Category | Attempts |
+| ----- | ----- | ----- |
+| Builder | ```Creational``` |  |
+| Adapter | ```Structural``` |  |
+| Bridge | ```Structural``` |  |
+| Flyweight | ```Structural``` |  |
+| Chain of Responsibility | ```Behavioral``` |  |
+| Command | ```Behavioral``` |  |
+| Interpreter | ```Behavioral``` |  |
 | Visitor | ```Behavioral``` |  |
 
 
