@@ -2,46 +2,53 @@
 
 Learning the 'Gang of Four' design patterns.
 
-## Progress
+-----
 
 ### Group I
 
-| Pattern | Category | Attempts |
-| ----- | ----- | ----- |
-| Abstract Factory | ```Creational``` |  |
-| Factory Method | ```Creational``` | ⦿ ⦿ |
-| Decorator | ```Structural``` | ⦿ ⦿ |
-| Facade | ```Structural``` |  |
-| Iterator | ```Behavioral``` |  |
-| Observer | ```Behavioral``` | ⦿ |
-| Strategy | ```Behavioral``` | ⦿ ⦿ |
-| Template Method | ```Behavioral``` |  |
+| Pattern | Category | Exercises | Attempts |
+| ----- | ----- | ----- | ----- |
+| Abstract Factory | ```Creational``` |  |  |
+| Factory Method | ```Creational``` | ⦿ ⦿ |  |
+| Decorator | ```Structural``` | ⦿ ⦿ |  |
+| Facade | ```Structural``` |  |  |
+| Iterator | ```Behavioral``` |  |  |
+| Observer | ```Behavioral``` | ⦿ |  |
+| Strategy | ```Behavioral``` | ⦿ ⦿ |  |
+| Template Method | ```Behavioral``` |  |  |
+
+-----
 
 ### Group II
 
-| Pattern | Category | Attempts |
-| ----- | ----- | ----- |
-| Singleton | ```Creational``` |  |
-| Prototype | ```Creational``` |  |
-| Composite | ```Structural``` |  |
-| Proxy | ```Structural``` |  |
-| Mediator | ```Behavioral``` |  |
-| Memento | ```Behavioral``` |  |
-| State | ```Behavioral``` |  |
+| Pattern | Category | Exercises | Attempts |
+| ----- | ----- | ----- | ----- |
+| Singleton | ```Creational``` |  |  |
+| Prototype | ```Creational``` |  |  |
+| Composite | ```Structural``` |  |  |
+| Proxy | ```Structural``` |  |  |
+| Mediator | ```Behavioral``` |  |  |
+| Memento | ```Behavioral``` |  |  |
+| State | ```Behavioral``` |  |  |
+
+
+-----
 
 ### Group III
 
-| Pattern | Category | Attempts |
-| ----- | ----- | ----- |
-| Builder | ```Creational``` |  |
-| Adapter | ```Structural``` |  |
-| Bridge | ```Structural``` |  |
-| Flyweight | ```Structural``` |  |
-| Chain of Responsibility | ```Behavioral``` |  |
-| Command | ```Behavioral``` |  |
-| Interpreter | ```Behavioral``` |  |
-| Visitor | ```Behavioral``` |  |
+| Pattern | Category | Exercises | Attempts |
+| ----- | ----- | ----- | ----- |
+| Builder | ```Creational``` |  |  |
+| Adapter | ```Structural``` |  |  |
+| Bridge | ```Structural``` |  |  |
+| Flyweight | ```Structural``` |  |  |
+| Chain of Responsibility | ```Behavioral``` |  |  |
+| Command | ```Behavioral``` |  |  |
+| Interpreter | ```Behavioral``` |  |  |
+| Visitor | ```Behavioral``` |  |  |
 
+
+-----
 
 ## Resources Used
 
