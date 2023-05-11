@@ -14,5 +14,12 @@ namespace Kitchen
         public FoodItem Appetizer { get; set; }
         public FoodItem Entree { get; set; }
         public FoodItem Drink { get; set; }
+
+        public Order(FoodItem appetizer, FoodItem entree, FoodItem drink)
+        {
+            Appetizer = appetizer;
+            Entree = entree;
+            Drink = drink;
+        }
     }
 }
