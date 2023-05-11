@@ -12,7 +12,7 @@ Learning the 'Gang of Four' design patterns.
 | Factory Method | ```Creational``` | ⦿ ⦿ |  |
 | Decorator | ```Structural``` | ⦿ ⦿ |  |
 | Facade | ```Structural``` |  |  |
-| Iterator | ```Behavioral``` |  |  |
+| Iterator | ```Behavioral``` | ⦿ |  |
 | Observer | ```Behavioral``` | ⦿ ⦿ |  |
 | Strategy | ```Behavioral``` | ⦿ ⦿ |  |
 | Template Method | ```Behavioral``` |  |  |
