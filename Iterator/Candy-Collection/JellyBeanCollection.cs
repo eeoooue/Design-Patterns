@@ -12,7 +12,7 @@ namespace Candy_Collection
     /// </summary>
     class JellyBeanCollection : ICandyCollection
     {
-        private ArrayList _items = new ArrayList();
+        private List<JellyBean> _items = new();
 
         public IJellyBeanIterator CreateIterator()
         {
@@ -26,7 +26,7 @@ namespace Candy_Collection
         }
 
         // Indexer
-        public object this[int index]
+        public JellyBean this[int index]
         {
             get { return _items[index]; }
             set { _items.Add(value); }

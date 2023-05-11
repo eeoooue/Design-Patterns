@@ -13,17 +13,12 @@ namespace Candy_Collection
     class JellyBean
     {
         private string _flavor;
+        public string Flavor { get { return _flavor; } }
 
         // Constructor
         public JellyBean(string flavor)
         {
-            this._flavor = flavor;
-        }
-
-
-        public string Flavor
-        {
-            get { return _flavor; }
+            _flavor = flavor;
         }
     }
 }
