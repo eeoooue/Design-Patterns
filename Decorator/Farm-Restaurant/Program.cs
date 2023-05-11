@@ -1,4 +1,7 @@
-﻿namespace Farm_Restaurant
+﻿using Farm_Restaurant.DishDecorators;
+using Farm_Restaurant.RestaurantDishes;
+
+namespace Farm_Restaurant
 {
     internal class Program
     {

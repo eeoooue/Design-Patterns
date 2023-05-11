@@ -4,31 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Farm_Restaurant
+namespace Farm_Restaurant.DishDecorators
 {
-    /// <summary>
-    /// The abstract Decorator class.  
-    /// </summary>
-    abstract class Decorator : RestaurantDish
-    {
-        protected RestaurantDish _dish;
-
-        public Decorator(RestaurantDish dish)
-        {
-            _dish = dish;
-        }
-
-        public override void Display()
-        {
-            _dish.Display();
-        }
-    }
-
     /// <summary>
     /// A ConcreteDecorator. This class will impart "responsibilities" onto the dishes 
     /// (e.g. whether or not those dishes have enough ingredients left to order them)
     /// </summary>
-    class Available : Decorator
+    class Available : DishDecorator
     {
         public int NumAvailable { get; set; } //How many can we make?
         protected List<string> customers = new List<string>();
