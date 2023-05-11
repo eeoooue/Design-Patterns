@@ -13,7 +13,7 @@ Learning the 'Gang of Four' design patterns.
 | ```Behavioral``` | Chain of Responsibility |  |
 | ```Behavioral``` | Command |  |
 | ```Structural``` | Composite |  |
-| ```Structural``` | Decorator | ⦿ |
+| ```Structural``` | Decorator | ⦿ ⦿ |
 | ```Structural``` | Facade |  |
 | ```Creational``` | Factory Method | ⦿ ⦿ |
 | ```Structural``` | Flyweight |  |
@@ -26,7 +26,7 @@ Learning the 'Gang of Four' design patterns.
 | ```Structural``` | Proxy |  |
 | ```Creational``` | Singleton |  |
 | ```Behavioral``` | State |  |
-| ```Behavioral``` | Strategy | ⦿ |
+| ```Behavioral``` | Strategy | ⦿ ⦿ |
 | ```Behavioral``` | Template Method |  |
 | ```Behavioral``` | Visitor |  |
 
