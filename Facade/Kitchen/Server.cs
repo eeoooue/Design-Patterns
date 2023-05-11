@@ -23,13 +23,11 @@ namespace Kitchen
         {
             Console.WriteLine($"{patron.Name} places order for cold app #{coldAppID}, hot entree #{hotEntreeID}, and drink #{drinkID}.");
 
-            Console.WriteLine($"{coldAppID} places order for cold app hot entree {hotEntreeID} and drink {drinkID}.");
+            FoodItem appetizer = _coldPrep.PrepDish(coldAppID);
+            FoodItem entree = _hotPrep.PrepDish(hotEntreeID);
+            FoodItem drink = _bar.PrepDish(drinkID);
 
-            Order order = new Order();
-
-            order.Appetizer = _coldPrep.PrepDish(coldAppID);
-            order.Entree = _hotPrep.PrepDish(hotEntreeID);
-            order.Drink = _bar.PrepDish(drinkID);
+            Order order = new Order(appetizer, entree, drink);
 
             return order;
         }

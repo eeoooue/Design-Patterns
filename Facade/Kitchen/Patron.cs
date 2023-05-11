@@ -12,15 +12,11 @@ namespace Kitchen
     class Patron
     {
         private string _name;
+        public string Name { get { return _name; } }
 
         public Patron(string name)
         {
-            this._name = name;
-        }
-
-        public string Name
-        {
-            get { return _name; }
+            _name = name;
         }
     }
 }
