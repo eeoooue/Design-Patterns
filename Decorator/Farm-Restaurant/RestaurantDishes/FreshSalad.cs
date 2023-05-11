@@ -12,7 +12,7 @@ namespace Farm_Restaurant.RestaurantDishes
     class FreshSalad : RestaurantDish
     {
         private string _greens;
-        private string _cheese; //I am going to use this pun everywhere I can
+        private string _cheese;
         private string _dressing;
 
         public FreshSalad(string greens, string cheese, string dressing)

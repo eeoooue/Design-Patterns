@@ -23,6 +23,4 @@ namespace Farm_Restaurant
             _dish.Display();
         }
     }
-
-    
 }

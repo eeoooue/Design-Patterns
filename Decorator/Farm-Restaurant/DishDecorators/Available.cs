@@ -36,7 +36,7 @@ namespace Farm_Restaurant.DishDecorators
         {
             base.Display();
 
-            foreach (var customer in customers)
+            foreach (string customer in customers)
             {
                 Console.WriteLine("Ordered by " + customer);
             }
