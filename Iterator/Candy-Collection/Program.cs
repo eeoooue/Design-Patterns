@@ -21,9 +21,11 @@
 
             Console.WriteLine("Gimme all the jelly beans!");
 
-            for (JellyBean item = iterator.First(); !iterator.IsDone; item = iterator.Next())
+            JellyBean item = iterator.CurrentBean;
+            while (!iterator.IsDone)
             {
                 Console.WriteLine(item.Flavor);
+                item = iterator.Next();
             }
 
             Console.ReadKey();
