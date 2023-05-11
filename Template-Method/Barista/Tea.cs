@@ -6,30 +6,21 @@ using System.Threading.Tasks;
 
 namespace Barista
 {
-    internal class Tea
+    internal class Tea : BaristaBeverage
     {
-        public void PrepareRecipe()
-        {
-            BoilWater();
-            SteepTeaBag();
-            PourInCup();
-            AddSugarAndMilk();
-        }
-        public void BoilWater()
+        public override void BoilWater()
         {
             Console.WriteLine("Boiling water");
         }
-        public void SteepTeaBag()
+
+        public override void Brew()
+        {
+            SteepTeaBag();
+        }
+        private void SteepTeaBag()
         {
             Console.WriteLine("Dripping Tea through filter");
         }
-        public void PourInCup()
-        {
-            Console.WriteLine("Pouring into cup");
-        }
-        public void AddSugarAndMilk()
-        {
-            Console.WriteLine("Adding Sugar and Milk");
-        }
+        
     }
 }

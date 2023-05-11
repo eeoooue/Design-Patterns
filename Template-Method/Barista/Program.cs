@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Tea tea = new Tea();
-            Coffee coffee = new Coffee();
+            BaristaBeverage tea = new Tea();
+            BaristaBeverage coffee = new Coffee();
 
             tea.PrepareRecipe();
             Console.WriteLine();
