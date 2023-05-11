@@ -13,7 +13,7 @@ Learning the 'Gang of Four' design patterns.
 | Decorator | ```Structural``` | ⦿ ⦿ |  |
 | Facade | ```Structural``` |  |  |
 | Iterator | ```Behavioral``` |  |  |
-| Observer | ```Behavioral``` | ⦿ |  |
+| Observer | ```Behavioral``` | ⦿ ⦿ |  |
 | Strategy | ```Behavioral``` | ⦿ ⦿ |  |
 | Template Method | ```Behavioral``` |  |  |
 
