@@ -7,24 +7,24 @@ Learning the 'Gang of Four' design patterns.
 | Category | Pattern | Attempts |
 | ------- | ------- | --------------- |
 | ```Creational``` | Abstract Factory |  |
-| ```Creational``` | Builder |  |
-| ```Creational``` | Factory Method | ⦿ ⦿ |
-| ```Creational``` | Prototype |  |
-| ```Creational``` | Singleton |  |
 | ```Structural``` | Adapter |  |
+| ```Creational``` | Builder |  |
 | ```Structural``` | Bridge |  |
+| ```Behavioral``` | Chain of Responsibility |  |
+| ```Behavioral``` | Command |  |
 | ```Structural``` | Composite |  |
 | ```Structural``` | Decorator | ⦿ |
 | ```Structural``` | Facade |  |
+| ```Creational``` | Factory Method | ⦿ ⦿ |
 | ```Structural``` | Flyweight |  |
-| ```Structural``` | Proxy |  |
-| ```Behavioral``` | Chain of Responsibility |  |
-| ```Behavioral``` | Command |  |
 | ```Behavioral``` | Interpreter |  |
 | ```Behavioral``` | Iterator |  |
 | ```Behavioral``` | Mediator |  |
 | ```Behavioral``` | Memento |  |
 | ```Behavioral``` | Observer | ⦿ |
+| ```Creational``` | Prototype |  |
+| ```Structural``` | Proxy |  |
+| ```Creational``` | Singleton |  |
 | ```Behavioral``` | State |  |
 | ```Behavioral``` | Strategy | ⦿ |
 | ```Behavioral``` | Template Method |  |
