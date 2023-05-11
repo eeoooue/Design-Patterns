@@ -1,4 +1,4 @@
-﻿using Recipes.Deserts;
+﻿using Recipes.Desserts;
 using Recipes.Sandwiches;
 using System;
 using System.Collections.Generic;

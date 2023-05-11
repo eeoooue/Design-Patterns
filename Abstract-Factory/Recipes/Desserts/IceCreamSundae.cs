@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Recipes.Deserts
+namespace Recipes.Desserts
 {
     /// <summary>
-    /// A ConcreteProduct
+    /// A concrete object
     /// </summary>
-    class CremeBrulee : Dessert { }
+    class IceCreamSundae : Dessert { }
 }
