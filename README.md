@@ -4,31 +4,43 @@ Learning the 'Gang of Four' design patterns.
 
 ## Progress
 
-| Category | Pattern | Attempts |
-| ------- | ------- | --------------- |
-| ```Creational``` | Abstract Factory |  |
-| ```Creational``` | Builder |  |
-| ```Creational``` | Factory Method | ⦿ ⦿ |
-| ```Creational``` | Prototype |  |
-| ```Creational``` | Singleton |  |
-| ```Structural``` | Adapter |  |
-| ```Structural``` | Bridge |  |
-| ```Structural``` | Composite |  |
-| ```Structural``` | Decorator | ⦿ |
-| ```Structural``` | Facade |  |
-| ```Structural``` | Flyweight |  |
-| ```Structural``` | Proxy |  |
-| ```Behavioral``` | Chain of Responsibility |  |
-| ```Behavioral``` | Command |  |
-| ```Behavioral``` | Interpreter |  |
-| ```Behavioral``` | Iterator |  |
-| ```Behavioral``` | Mediator |  |
-| ```Behavioral``` | Memento |  |
-| ```Behavioral``` | Observer | ⦿ |
-| ```Behavioral``` | State |  |
-| ```Behavioral``` | Strategy | ⦿ |
-| ```Behavioral``` | Template Method |  |
-| ```Behavioral``` | Visitor |  |
+### Group I
+
+| Pattern | Category | Attempts |
+| ----- | ----- | ----- |
+| Abstract Factory | ```Creational``` |  |
+| Factory Method | ```Creational``` | ⦿ ⦿ |
+| Decorator | ```Structural``` | ⦿ ⦿ |
+| Facade | ```Structural``` |  |
+| Iterator | ```Behavioral``` |  |
+| Observer | ```Behavioral``` | ⦿ |
+| Strategy | ```Behavioral``` | ⦿ ⦿ |
+| Template Method | ```Behavioral``` |  |
+
+### Group II
+
+| Pattern | Category | Attempts |
+| ----- | ----- | ----- |
+| Singleton | ```Creational``` |  |
+| Prototype | ```Creational``` |  |
+| Composite | ```Structural``` |  |
+| Proxy | ```Structural``` |  |
+| Mediator | ```Behavioral``` |  |
+| Memento | ```Behavioral``` |  |
+| State | ```Behavioral``` |  |
+
+### Group III
+
+| Pattern | Category | Attempts |
+| ----- | ----- | ----- |
+| Builder | ```Creational``` |  |
+| Adapter | ```Structural``` |  |
+| Bridge | ```Structural``` |  |
+| Flyweight | ```Structural``` |  |
+| Chain of Responsibility | ```Behavioral``` |  |
+| Command | ```Behavioral``` |  |
+| Interpreter | ```Behavioral``` |  |
+| Visitor | ```Behavioral``` |  |
 
 
 ## Resources Used
