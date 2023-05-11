@@ -13,20 +13,22 @@ namespace Barista
             BoilWater();
             Brew();
             PourInMug();
-            AddSugarAndMilk();
+            AddCondiments();
         }
 
-        public abstract void BoilWater();
+        public virtual void BoilWater()
+        {
+            Console.WriteLine("Boiling water");
+        }
 
         public abstract void Brew();
+
+        public abstract void AddCondiments();
 
         public virtual void PourInMug()
         {
             Console.WriteLine("Pouring into a mug");
         }
-        public virtual void AddSugarAndMilk()
-        {
-            Console.WriteLine("Adding sugar and milk");
-        }
+        
     }
 }

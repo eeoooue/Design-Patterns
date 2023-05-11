@@ -8,19 +8,24 @@ namespace Barista
 {
     internal class Tea : BaristaBeverage
     {
-        public override void BoilWater()
+        public override void AddCondiments()
         {
-            Console.WriteLine("Boiling water");
+            AddLemon();
         }
 
         public override void Brew()
         {
             SteepTeaBag();
         }
+
+        private void AddLemon()
+        {
+            Console.WriteLine("Adding the juice of a lemon");
+        }
+
         private void SteepTeaBag()
         {
-            Console.WriteLine("Dripping Tea through filter");
+            Console.WriteLine("Steeping the tea");
         }
-        
     }
 }

@@ -9,15 +9,19 @@ namespace Barista
 {
     public class Coffee : BaristaBeverage
     {
-        
-        public override void BoilWater()
+        public override void AddCondiments()
         {
-            Console.WriteLine("Boiling water");
+            AddSugarAndMilk();
         }
 
         public override void Brew()
         {
             BrewCoffeeGrinds();
+        }
+
+        private void AddSugarAndMilk()
+        {
+            Console.WriteLine("Adding sugar and milk");
         }
 
         private void BrewCoffeeGrinds()
