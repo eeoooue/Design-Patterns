@@ -36,9 +36,9 @@ namespace Cafe_Menu
             }
         }
 
-        public MenuItem[] GetMenuItems()
+        public override Iterator GetIterator()
         {
-            return menuItems;
+            return new DinerMenuIterator(menuItems);
         }
     }
 }
