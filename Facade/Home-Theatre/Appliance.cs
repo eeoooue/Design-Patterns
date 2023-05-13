@@ -8,9 +8,8 @@ namespace Home_Theatre
 {
     abstract class Appliance
     {
-        public void On()
-        {
+        public void On() { }
 
-        }
+        public void Off() { }
     }
 }

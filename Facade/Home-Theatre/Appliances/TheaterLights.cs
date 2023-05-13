@@ -8,7 +8,7 @@ namespace Home_Theatre.Appliances
 {
     internal class TheaterLights : Appliance
     {
-        public void Dim()
+        public void Dim(int amount)
         {
 
         }

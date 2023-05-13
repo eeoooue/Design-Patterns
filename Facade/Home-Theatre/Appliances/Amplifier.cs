@@ -8,7 +8,7 @@ namespace Home_Theatre
 {
     internal class Amplifier : Appliance
     {
-        public void SetDVD()
+        public void SetDvd(string dvd)
         {
 
         }

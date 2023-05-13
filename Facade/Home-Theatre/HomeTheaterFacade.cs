@@ -18,28 +18,47 @@ namespace Home_Theatre
         private Screen _screen;
         private PopcornPopper _popper;
 
-        public HomeTheaterFacade(Amplifier amp,
-        Tuner tuner,
-        DvdPlayer dvd,
-        CdPlayer cd,
-        Projector projector,
-        Screen screen,
-        TheaterLights lights,
-        PopcornPopper popper)
+        public HomeTheaterFacade()
         {
-            _amp = amp;
-            _tuner = tuner;
-            _dvd = dvd;
-            _cd = cd;
-            _projector = projector;
-            _screen = screen;
-            _lights = lights;
-            _popper = popper;
+            _amp = new Amplifier();
+            _tuner = new Tuner();
+            _dvd = new DvdPlayer();
+            _cd = new CdPlayer();
+            _projector = new Projector();
+            _screen = new Screen();
+            _lights = new TheaterLights();
+            _popper = new PopcornPopper();
         }
 
-        public void WatchMovie()
+        public void WatchMovie(string movie)
         {
+            Console.WriteLine("Get ready to watch a movie...");
+            _popper.On();
+            _popper.Pop();
+            _lights.Dim(10);
+            _screen.Down();
+            _projector.On();
+            _projector.SetWidescreenMode();
+            _amp.On();
+            _amp.SetDvd("dvd");
+            _amp.SetSurroundSound();
+            _amp.SetVolume(5);
+            _dvd.On();
+            _dvd.Play(movie);
+            EndMovie();
+        }
 
+        public void EndMovie()
+        {
+            Console.WriteLine("Shutting movie theater down...");
+            _popper.Off();
+            _lights.On();
+            _screen.Up();
+            _projector.Off();
+            _amp.Off();
+            _dvd.Stop();
+            _dvd.Eject();
+            _dvd.Off();
         }
     }
 }

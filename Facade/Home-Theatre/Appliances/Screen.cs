@@ -8,6 +8,11 @@ namespace Home_Theatre.Appliances
 {
     internal class Screen : Appliance
     {
+        public void Up()
+        {
+
+        }
+
         public void Down()
         {
 

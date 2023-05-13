@@ -12,5 +12,15 @@ namespace Home_Theatre
         {
             Console.WriteLine($"Now playing {movie}");
         }
+
+        public void Eject()
+        {
+
+        }
+
+        public void Stop()
+        {
+
+        }
     }
 }
