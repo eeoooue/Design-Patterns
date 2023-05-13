@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Home_Theatre
 {
-    internal class DVD : Appliance
+    internal class DvdPlayer : Appliance
     {
         public void Play(string movie)
         {

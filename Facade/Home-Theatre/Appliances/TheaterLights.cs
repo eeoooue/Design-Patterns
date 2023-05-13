@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Home_Theatre.Appliances
 {
-    internal class Lights : Appliance
+    internal class TheaterLights : Appliance
     {
         public void Dim()
         {

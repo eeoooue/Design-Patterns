@@ -6,14 +6,11 @@ namespace Home_Theatre
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-
             PopcornPopper popper = new PopcornPopper();
             popper.On();
             popper.Pop();
 
-
-            Lights lights = new Lights();
+            TheaterLights lights = new TheaterLights();
             lights.Dim();
 
             Screen screen = new Screen();
@@ -30,10 +27,9 @@ namespace Home_Theatre
             amp.SetSurroundSound();
             amp.SetVolume(5);
 
-            DVD dvd = new DVD();
+            DvdPlayer dvd = new DvdPlayer();
             dvd.On();
-            
-            
+            dvd.Play("Ferris Bueller's Day Off");
         }
     }
 }
