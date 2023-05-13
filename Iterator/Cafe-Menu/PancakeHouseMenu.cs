@@ -42,9 +42,9 @@ namespace Cafe_Menu
             menuItems.Add(menuItem);
         }
 
-        public ArrayList GetMenuItems()
+        public override Iterator GetIterator()
         {
-            return menuItems;
+            return new PancakeHouseMenuIterator(menuItems);
         }
     }
 }
