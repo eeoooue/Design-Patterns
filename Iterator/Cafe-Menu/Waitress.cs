@@ -21,53 +21,19 @@ namespace Cafe_Menu
 
         public void PrintBreakfastMenu()
         {
-            ArrayList breakfastItems = breakfastMenu.GetMenuItems();
-            foreach(MenuItem item in breakfastItems)
-            {
-                PrintMenuItem(item);
-            }
+            PrintFromIterator(breakfastMenu.GetIterator());
         }
 
         public void PrintLunchMenu()
         {
-            MenuItem[] lunchItems = lunchMenu.GetMenuItems();
-            foreach(MenuItem item in lunchItems)
-            {
-                if (item != null)
-                {
-                    PrintMenuItem(item);
-                }
-            }
+            PrintFromIterator(lunchMenu.GetIterator());
         }
 
         public void PrintVegetarianMenu()
         {
-            ArrayList breakfastItems = breakfastMenu.GetMenuItems();
-            foreach (MenuItem item in breakfastItems)
-            {
-                if (item.isVegetarian())
-                {
-                    PrintMenuItem(item);
-                }
-            }
-
-
-            MenuItem[] lunchItems = lunchMenu.GetMenuItems();
-            foreach (MenuItem item in lunchItems)
-            {
-                if (item != null && item.isVegetarian())
-                {
-                    PrintMenuItem(item);
-                }
-            }
+            PrintVegetarianOptionsFromIterator(breakfastMenu.GetIterator());
+            PrintVegetarianOptionsFromIterator(lunchMenu.GetIterator());
         }
-
-
-        public void IsItemVegetarian(string name) { }
-        // - given the name of an item, returns true
-        // if the items is vegetarian, otherwise,
-        // returns false
-
 
         private void PrintMenuItem(MenuItem menuItem)
         {
@@ -76,6 +42,30 @@ namespace Cafe_Menu
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine(menuItem.getDescription());
             Console.ForegroundColor = ConsoleColor.Gray;
+        }
+
+        private void PrintFromIterator(Iterator iterator)
+        {
+            while (iterator.HasNext())
+            {
+                Object item = iterator.Next();
+                if (item is MenuItem menuItem)
+                {
+                    PrintMenuItem(menuItem);
+                }
+            }
+        }
+
+        private void PrintVegetarianOptionsFromIterator(Iterator iterator)
+        {
+            while (iterator.HasNext())
+            {
+                Object item = iterator.Next();
+                if (item is MenuItem menuItem && menuItem.isVegetarian())
+                {
+                    PrintMenuItem(menuItem);
+                }
+            }
         }
     }
 }
