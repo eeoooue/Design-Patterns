@@ -38,7 +38,7 @@ namespace Cafe_Menu
 
         public override Iterator GetIterator()
         {
-            throw new NotImplementedException();
+            return new CafeMenuIterator(menuItems);
         }
     }
 }
