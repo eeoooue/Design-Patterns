@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Cafe_Menu
 {
-    public class PancakeHouseMenu
+    public class PancakeHouseMenu : Menu
     {
         private ArrayList menuItems;
 
@@ -15,34 +15,34 @@ namespace Cafe_Menu
         {
             menuItems = new ArrayList();
 
-            addItem("K & B’s Pancake Breakfast",
+            AddItem("K & B’s Pancake Breakfast",
             "Pancakes with scrambled eggs, and toast",
             true,
             2.99);
 
-            addItem("Regular Pancake Breakfast",
+            AddItem("Regular Pancake Breakfast",
             "Pancakes with fried eggs, sausage",
             false,
             2.99);
 
-            addItem("Blueberry Pancakes",
+            AddItem("Blueberry Pancakes",
             "Pancakes made with fresh blueberries",
             true,
             3.49);
 
-            addItem("Waffles",
+            AddItem("Waffles",
             "Waffles, with your choice of blueberries or strawberries",
             true,
             3.59);
         }
 
-        public void addItem(string name, string description, bool vegetarian, double price)
+        public override void AddItem(string name, string description, bool vegetarian, double price)
         {
             MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
             menuItems.Add(menuItem);
         }
 
-        public ArrayList getMenuItems()
+        public ArrayList GetMenuItems()
         {
             return menuItems;
         }
