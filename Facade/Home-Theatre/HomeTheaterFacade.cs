@@ -10,9 +10,7 @@ namespace Home_Theatre
     internal class HomeTheaterFacade
     {
         private Amplifier _amp;
-        private Tuner _tuner;
         private DvdPlayer _dvd;
-        private CdPlayer _cd;
         private Projector _projector;
         private TheaterLights _lights;
         private Screen _screen;
@@ -21,9 +19,7 @@ namespace Home_Theatre
         public HomeTheaterFacade()
         {
             _amp = new Amplifier();
-            _tuner = new Tuner();
             _dvd = new DvdPlayer();
-            _cd = new CdPlayer();
             _projector = new Projector();
             _screen = new Screen();
             _lights = new TheaterLights();
