@@ -16,7 +16,7 @@ namespace Cafe_Menu
         public CafeMenuIterator(Hashtable menuItems)
         {
             _items = new List<MenuItem>();
-            foreach(var item in menuItems)
+            foreach(var item in menuItems.Values)
             {
                 if (item is MenuItem menuItem)
                 {
