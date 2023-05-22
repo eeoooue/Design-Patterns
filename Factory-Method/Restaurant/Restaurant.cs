@@ -9,20 +9,11 @@ namespace Restaurant
 {
     internal class Restaurant
     {
+        private SimpleBurgerFactory _factory = new SimpleBurgerFactory();
 
         public Burger OrderBurger(string request)
         {
-            Burger burger;
-
-            if (request == "veggie")
-            {
-                burger = new VeggieBurger();
-            }
-            else
-            {
-                burger = new BeefBurger();
-            }
-
+            Burger burger = _factory.CreateBurger(request);
             burger.Prepare();
             return burger;
         }
