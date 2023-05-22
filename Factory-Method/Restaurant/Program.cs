@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Restaurant restaurant = new Restaurant();
+
+            Burger burger = restaurant.OrderBurger("beef");
+            Console.WriteLine(burger);
+
+            Burger veggieBurger = restaurant.OrderBurger("veggie");
+            Console.WriteLine(veggieBurger);
         }
     }
 }
