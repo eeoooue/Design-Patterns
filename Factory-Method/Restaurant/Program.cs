@@ -1,15 +1,19 @@
-﻿namespace Restaurant
+﻿using Restaurant.Restaurants;
+
+namespace Restaurant
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Restaurant restaurant = new Restaurant();
-
-            Burger burger = restaurant.OrderBurger("beef");
+            Restaurant restaurant;
+            
+            restaurant = new BeefBurgerRestaurant();
+            Burger burger = restaurant.OrderBurger();
             Console.WriteLine(burger);
 
-            Burger veggieBurger = restaurant.OrderBurger("veggie");
+            restaurant = new VeggieBurgerRestaurant();
+            Burger veggieBurger = restaurant.OrderBurger();
             Console.WriteLine(veggieBurger);
         }
     }
