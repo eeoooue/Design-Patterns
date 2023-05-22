@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace Restaurant
 {
-    internal class Restaurant
+    abstract class Restaurant
     {
-        private SimpleBurgerFactory _factory = new SimpleBurgerFactory();
-
-        public Burger OrderBurger(string request)
+        public Burger OrderBurger()
         {
-            Burger burger = _factory.CreateBurger(request);
+            Burger burger = CreateBurger();
             burger.Prepare();
             return burger;
         }
+
+        public abstract Burger CreateBurger();
     }
 }
