@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Pizza.Pizzas
 {
-    internal class ThreeCheesePizza : Pizza
+    internal class DeepPanPizza : Pizza
     {
-        public ThreeCheesePizza() : base("Mozzarella, Fontina, Parmesan and Cheese Pizza", 10.00)
+        public DeepPanPizza() : base("Deep Pan Pizza", 2.20M)
         {
 
         }

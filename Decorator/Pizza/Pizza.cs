@@ -6,15 +6,25 @@ using System.Threading.Tasks;
 
 namespace Pizza
 {
-    abstract class Pizza
+    public class Pizza
     {
-        public double Cost { get; set; }
-        public string Description {get; set; }
+        protected decimal _cost;
+        protected string _description;
 
-        public Pizza(string description, double cost)
+        public Pizza(string description, decimal cost)
         {
-            Cost = cost;
-            Description = description;
+            _cost = cost;
+            _description = description;
+        }
+
+        public virtual decimal GetCost()
+        {
+            return _cost;
+        }
+
+        public virtual string GetDescription()
+        {
+            return _description;
         }
     }
 }
