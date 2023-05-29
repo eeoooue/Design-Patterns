@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pizza
 {
-    abstract class Pizza
+    public class Pizza
     {
         protected double _cost;
         protected string _description;
