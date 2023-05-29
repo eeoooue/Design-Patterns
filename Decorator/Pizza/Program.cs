@@ -1,10 +1,18 @@
-﻿namespace Pizza
+﻿using Pizza.ToppingDecorators;
+
+namespace Pizza
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Pizza pizza = new Pizza();
+
+            pizza = new JalapenoTopping(pizza);
+            pizza = new CheeseTopping(pizza);
+            pizza = new MozzarellaTopping(pizza);
+
+            Console.WriteLine($"Here's your {pizza.GetDescription()}!");
         }
     }
 }
