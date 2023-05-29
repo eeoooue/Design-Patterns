@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Pizza
 {
-    abstract class Topping : Pizza
+    abstract class ToppingDecorator : Pizza
     {
 
         private Pizza _pizza;
 
         private string _toppingDescription;
 
-        public Topping(Pizza pizza, string toppingDescription)
+        public ToppingDecorator(Pizza pizza, string toppingDescription)
         {
             _pizza = pizza;
             _toppingDescription = toppingDescription;
