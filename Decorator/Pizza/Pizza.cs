@@ -8,19 +8,23 @@ namespace Pizza
 {
     public class Pizza
     {
-        protected double _cost;
+        protected decimal _cost;
         protected string _description;
 
-        public Pizza() { }
-
-        public virtual double GetCost()
+        public Pizza(string description, decimal cost)
         {
-            return 0;
+            _cost = cost;
+            _description = description;
+        }
+
+        public virtual decimal GetCost()
+        {
+            return _cost;
         }
 
         public virtual string GetDescription()
         {
-            return "Pizza";
+            return _description;
         }
     }
 }

@@ -8,6 +8,6 @@ namespace Pizza.ToppingDecorators
 {
     internal class CheeseTopping : ToppingDecorator
     {
-        public CheeseTopping(Pizza pizza) : base(pizza, "cheese") { }
+        public CheeseTopping(Pizza pizza) : base(pizza, "cheese", 0.40M) { }
     }
 }

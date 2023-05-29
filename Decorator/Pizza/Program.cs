@@ -1,4 +1,5 @@
-﻿using Pizza.ToppingDecorators;
+﻿using Pizza.Pizzas;
+using Pizza.ToppingDecorators;
 
 namespace Pizza
 {
@@ -6,13 +7,14 @@ namespace Pizza
     {
         static void Main(string[] args)
         {
-            Pizza pizza = new Pizza();
+            Pizza pizza = new DeepPanPizza();
 
             pizza = new JalapenoTopping(pizza);
             pizza = new CheeseTopping(pizza);
             pizza = new MozzarellaTopping(pizza);
 
             Console.WriteLine($"Here's your {pizza.GetDescription()}!");
+            Console.WriteLine($"That'll be ${pizza.GetCost()}.");
         }
     }
 }
