@@ -10,7 +10,7 @@ Learning the 'Gang of Four' design patterns.
 | ----- | ----- | ----- | ----- |
 | Abstract Factory | ```Creational``` | ⦿ ⦿ |  |
 | Factory Method | ```Creational``` | ⦿ ⦿ ⦿ |  |
-| Decorator | ```Structural``` | ⦿ ⦿ |  |
+| Decorator | ```Structural``` | ⦿ ⦿ ⦿ |  |
 | Facade | ```Structural``` | ⦿ ⦿ |  |
 | Iterator | ```Behavioral``` | ⦿ ⦿ |  |
 | Observer | ```Behavioral``` | ⦿ ⦿ |  |
