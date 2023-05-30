@@ -15,6 +15,13 @@ namespace Animals
         private double _speed;
         private string _sound;
 
+        private Flys _flyingType;
+
+        public void SetFlyingType(Flys flyingType)
+        {
+            _flyingType = flyingType;
+        }
+
         public void SetName(string name)
         {
             _name = name;
@@ -77,8 +84,8 @@ namespace Animals
 
         public void Fly()
         {
-            string name = GetName();
-            Console.WriteLine($"the {name} is flying!");
+            string flying = _flyingType.Fly();
+            Console.WriteLine($"{GetName()}: {flying}");
         }
     }
 }
