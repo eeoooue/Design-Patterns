@@ -74,5 +74,11 @@ namespace Animals
         {
             return _sound;
         }
+
+        public void Fly()
+        {
+            string name = GetName();
+            Console.WriteLine($"the {name} is flying!");
+        }
     }
 }

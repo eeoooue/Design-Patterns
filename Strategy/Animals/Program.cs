@@ -12,8 +12,10 @@ namespace Animals
                 new Bird(),
             };
 
-
-
+            foreach(Animal animal in animals)
+            {
+                animal.Fly();
+            }
         }
     }
 }
