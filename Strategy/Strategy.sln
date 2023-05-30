@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Duck-Behaviours", "Duck-Behaviours\Duck-Behaviours.csproj", "{A9C7972B-2F33-4669-98F8-B24C39868967}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cooking", "Cooking\Cooking.csproj", "{B51C29B6-9199-40F9-8508-CFFDC3E60E8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cooking", "Cooking\Cooking.csproj", "{B51C29B6-9199-40F9-8508-CFFDC3E60E8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animals", "Animals\Animals.csproj", "{F89B2D4B-5006-4616-8425-EA5278ADB2E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B51C29B6-9199-40F9-8508-CFFDC3E60E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B51C29B6-9199-40F9-8508-CFFDC3E60E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B51C29B6-9199-40F9-8508-CFFDC3E60E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F89B2D4B-5006-4616-8425-EA5278ADB2E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F89B2D4B-5006-4616-8425-EA5278ADB2E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F89B2D4B-5006-4616-8425-EA5278ADB2E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F89B2D4B-5006-4616-8425-EA5278ADB2E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

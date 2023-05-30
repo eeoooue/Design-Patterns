@@ -14,7 +14,7 @@ Learning the 'Gang of Four' design patterns.
 | Facade | ```Structural``` | ⦿ ⦿ |  |
 | Iterator | ```Behavioral``` | ⦿ ⦿ |  |
 | Observer | ```Behavioral``` | ⦿ ⦿ |  |
-| Strategy | ```Behavioral``` | ⦿ ⦿ |  |
+| Strategy | ```Behavioral``` | ⦿ ⦿ ⦿ |  |
 | Template Method | ```Behavioral``` | ⦿ ⦿ |  |
 
 -----
