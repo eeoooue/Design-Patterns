@@ -18,17 +18,20 @@ namespace Stock_Market.Subjects
 
         public void NotifyObservers()
         {
-            throw new NotImplementedException();
+            foreach(Observer observer in _observers)
+            {
+                observer.Update();
+            }
         }
 
         public void Register(Observer observer)
         {
-            throw new NotImplementedException();
+            _observers.Add(observer);
         }
 
         public void Unregister(Observer observer)
         {
-            throw new NotImplementedException();
+            _observers.Remove(observer);
         }
     }
 }
