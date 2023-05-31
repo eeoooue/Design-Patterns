@@ -8,6 +8,6 @@ namespace Stock_Market
 {
     internal interface Observer
     {
-        public void Update();
+        public void Update(double ibmPrice, double aaplPrice, double googPrice);
     }
 }

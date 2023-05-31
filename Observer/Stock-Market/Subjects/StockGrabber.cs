@@ -28,7 +28,7 @@ namespace Stock_Market.Subjects
         {
             foreach(Observer observer in _observers)
             {
-                observer.Update();
+                observer.Update(IBMPrice, AAPLPrice, GOOGPrice);
             }
         }
 
