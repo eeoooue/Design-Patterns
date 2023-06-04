@@ -8,9 +8,18 @@ namespace Hoagie_Hut
 {
     abstract class Hoagie
     {
+        public string Name { get; private set; }
+
+
+        public Hoagie(string name)
+        {
+            Name = name;
+        }
 
         public void MakeSandwich()
         {
+            Console.WriteLine($"Fulfilling order for: '{Name}'");
+
             CutBun();
 
             if (CustomerWantsMeat())
@@ -34,16 +43,18 @@ namespace Hoagie_Hut
             }
 
             WrapTheHoagie();
+
+            Console.WriteLine();
         }
 
         public void CutBun()
         {
-            Console.WriteLine($"The hoagie is cut.");
+            Console.WriteLine($" - The hoagie is cut.");
         }
 
         public void WrapTheHoagie()
         {
-            Console.WriteLine($"Wrap the hoagie.");
+            Console.WriteLine($" - Wrap the hoagie.");
         }
 
         public virtual bool CustomerWantsMeat()

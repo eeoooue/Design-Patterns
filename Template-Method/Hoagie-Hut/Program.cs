@@ -1,10 +1,16 @@
-﻿namespace Hoagie_Hut
+﻿using Hoagie_Hut.Hoagies;
+
+namespace Hoagie_Hut
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Hoagie cust12Hoagie = new ItalianHoagie();
+            cust12Hoagie.MakeSandwich();
+
+            Hoagie cust13Hoagie = new VeggieHoagie();
+            cust13Hoagie.MakeSandwich();
         }
     }
 }

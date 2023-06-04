@@ -13,11 +13,13 @@ namespace Hoagie_Hut.Hoagies
 
         private string[] condimentsUsed = { "Oil", "Vinegar" };
 
+        public VeggieHoagie() : base("Veggie Hoagie") { }
+
         public override void AddCheese() { }
 
         public override void AddCondiments()
         {
-            Console.Write($"Adding the condiments:");
+            Console.Write($" - Adding the condiments:");
 
             foreach (string condiment in condimentsUsed)
             {
@@ -31,7 +33,7 @@ namespace Hoagie_Hut.Hoagies
 
         public override void AddVegetables()
         {
-            Console.Write($"Adding the vegetables:");
+            Console.Write($" - Adding the vegetables:");
 
             foreach (string veg in veggiesUsed)
             {
@@ -40,6 +42,16 @@ namespace Hoagie_Hut.Hoagies
 
             Console.WriteLine();
 
+        }
+
+        public override bool CustomerWantsMeat()
+        {
+            return false;
+        }
+
+        public override bool CustomerWantsCheese()
+        {
+            return false;
         }
     }
 }
