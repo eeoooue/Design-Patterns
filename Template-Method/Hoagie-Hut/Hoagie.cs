@@ -8,5 +8,70 @@ namespace Hoagie_Hut
 {
     abstract class Hoagie
     {
+
+        public void MakeSandwich()
+        {
+            CutBun();
+
+            if (CustomerWantsMeat())
+            {
+                AddMeat();
+            }
+
+            if (CustomerWantsCheese())
+            {
+                AddCheese();
+            }
+
+            if (CustomerWantsVegetables())
+            {
+                AddVegetables();
+            }
+
+            if (CustomerWantsCondiments())
+            {
+                AddCondiments();
+            }
+
+            WrapTheHoagie();
+        }
+
+        public void CutBun()
+        {
+            Console.WriteLine($"The hoagie is cut.");
+        }
+
+        public void WrapTheHoagie()
+        {
+            Console.WriteLine($"Wrap the hoagie.");
+        }
+
+        public virtual bool CustomerWantsMeat()
+        {
+            return true;
+        }
+
+        public virtual bool CustomerWantsCondiments()
+        {
+            return true;
+        }
+
+        public virtual bool CustomerWantsCheese()
+        {
+            return true;
+        }
+
+        public virtual bool CustomerWantsVegetables()
+        {
+            return true;
+        }
+
+        abstract public void AddCheese();
+
+        abstract public void AddCondiments();
+
+        abstract public void AddMeat();
+
+        abstract public void AddVegetables();
     }
 }
