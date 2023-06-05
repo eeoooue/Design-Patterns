@@ -23,7 +23,7 @@ namespace Song_Info
         {
             ShowSongsFromCollection(_songs70s);
             ShowSongsFromCollection(_songs80s);
-            ShowBest90s();
+            ShowSongsFromCollection(_songs90s);
         }
 
         private void ShowSongsFromCollection(SongCollection collection)
@@ -33,16 +33,6 @@ namespace Song_Info
             while (iterator.HasNext())
             {
                 object song = iterator.Next();
-                Console.WriteLine(song);
-            }
-        }
-
-        private void ShowBest90s()
-        {
-            Dictionary<int, SongInfo> songs = _songs90s.getBestSongs();
-
-            foreach (SongInfo song in songs.Values)
-            {
                 Console.WriteLine(song);
             }
         }

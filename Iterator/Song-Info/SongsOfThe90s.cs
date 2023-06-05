@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Song_Info
 {
-    internal class SongsOfThe90s
+    internal class SongsOfThe90s : SongCollection
     {
         public Dictionary<int, SongInfo> _bestSongs;
         int _hashKey = 0;
@@ -26,9 +26,9 @@ namespace Song_Info
             _bestSongs[_hashKey++] = song;
         }
 
-        public Dictionary<int, SongInfo> getBestSongs()
+        public Iterator CreateIterator()
         {
-            return _bestSongs;
+            return new SongIterator(_bestSongs);
         }
     }
 }
