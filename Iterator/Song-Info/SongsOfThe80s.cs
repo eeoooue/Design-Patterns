@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Song_Info
 {
-    internal class SongsOfThe80s
+    internal class SongsOfThe80s : SongCollection
     {
         public SongInfo[] _bestSongs;
         public int arrayPosition = 0;
@@ -26,9 +26,9 @@ namespace Song_Info
             _bestSongs[arrayPosition++] = song;
         }
 
-        public SongInfo[] getBestSongs()
+        public Iterator CreateIterator()
         {
-            return _bestSongs;
+            return new SongIterator(_bestSongs);
         }
     }
 }
