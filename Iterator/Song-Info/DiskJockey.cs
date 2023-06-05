@@ -21,17 +21,18 @@ namespace Song_Info
 
         public void ShowTheSongs()
         {
-            ShowBest70s();
+            ShowSongsFromCollection(_songs70s);
             ShowBest80s();
             ShowBest90s();
         }
 
-        private void ShowBest70s()
+        private void ShowSongsFromCollection(SongCollection collection)
         {
-            List<SongInfo> songs = _songs70s.getBestSongs();
+            Iterator iterator = collection.CreateIterator();
 
-            foreach (SongInfo song in songs)
+            while (iterator.HasNext())
             {
+                object song = iterator.Next();
                 Console.WriteLine(song);
             }
         }

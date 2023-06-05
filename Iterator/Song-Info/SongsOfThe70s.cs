@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Song_Info
 {
-    internal class SongsOfThe70s
+    internal class SongsOfThe70s : SongCollection
     {
         public List<SongInfo> _bestSongs;
 
@@ -25,9 +25,9 @@ namespace Song_Info
             _bestSongs.Add(song);
         }
 
-        public List<SongInfo> getBestSongs()
+        public Iterator CreateIterator()
         {
-            return _bestSongs;
+            return new SongIterator(_bestSongs);
         }
     }
 }
