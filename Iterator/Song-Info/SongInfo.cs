@@ -18,5 +18,10 @@ namespace Song_Info
             Artist = artist;
             Year = releaseYear;
         }
+
+        public override string ToString()
+        {
+            return $"({Year}) {Artist} - {Title}";
+        }
     }
 }
