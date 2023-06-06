@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recipes", "Recipes\Recipes.csproj", "{A5CBF5B7-468D-4529-899C-1C1A8B825864}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pizza-Ingredients", "Pizza-Ingredients\Pizza-Ingredients.csproj", "{91AC8879-C412-4782-8185-1BAE868EAE49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pizza-Ingredients", "Pizza-Ingredients\Pizza-Ingredients.csproj", "{91AC8879-C412-4782-8185-1BAE868EAE49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Space-Ships", "Space-Ships\Space-Ships.csproj", "{0A2AC00F-5092-422B-883A-7872ADB93652}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{91AC8879-C412-4782-8185-1BAE868EAE49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91AC8879-C412-4782-8185-1BAE868EAE49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91AC8879-C412-4782-8185-1BAE868EAE49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A2AC00F-5092-422B-883A-7872ADB93652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A2AC00F-5092-422B-883A-7872ADB93652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A2AC00F-5092-422B-883A-7872ADB93652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A2AC00F-5092-422B-883A-7872ADB93652}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

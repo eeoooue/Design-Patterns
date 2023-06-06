@@ -4,7 +4,15 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            EnemyShipFactory factory = new EnemyShipFactory();
+
+            Console.WriteLine($"What kind of ship? (U / R / B)");
+
+            string userInput = Console.ReadLine();
+
+            EnemyShip ship = factory.MakeEnemyShip(userInput);
+
+            Console.WriteLine($"A {ship.Name} was made! (Speed: {ship.Speed}, Damage: {ship.Damage})");
         }
     }
 }
