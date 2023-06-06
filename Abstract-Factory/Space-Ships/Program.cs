@@ -1,18 +1,21 @@
-﻿namespace Space_Ships
+﻿using Space_Ships.BuildingContexts;
+
+namespace Space_Ships
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            EnemyShipFactory factory = new EnemyShipFactory();
+            // EnemyShipBuilding handles orders for new EnemyShips
+            // You send it a code using the orderTheShip method &
+            // it sends the order to the right factory for creation
 
-            Console.WriteLine($"What kind of ship? (U / R / B)");
+            EnemyShipBuilding MakeUFOs = new UFOEnemyShipBuilding();
 
-            string userInput = Console.ReadLine();
+            EnemyShip theGrunt = MakeUFOs.orderTheShip("UFO");
+            Console.WriteLine();
 
-            EnemyShip ship = factory.MakeEnemyShip(userInput);
-
-            Console.WriteLine($"A {ship.Name} was made! (Speed: {ship.Speed}, Damage: {ship.Damage})");
+            EnemyShip theBoss = MakeUFOs.orderTheShip("UFO BOSS");
         }
     }
 }

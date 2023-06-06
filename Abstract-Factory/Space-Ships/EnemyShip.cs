@@ -6,19 +6,49 @@ using System.Threading.Tasks;
 
 namespace Space_Ships
 {
-    abstract class EnemyShip
+    public abstract class EnemyShip
     {
-        public string Name { get; private set; }
+        private string name;
 
-        public double Speed { get; private set; }
+        // Newly defined objects that represent weapon & engine
+        // These can be changed easily by assigning new parts 
+        // in UFOEnemyShipFactory or UFOBossEnemyShipFactory
 
-        public double Damage { get; private set; }
+        protected ESWeapon weapon;
+        protected ESEngine engine;
 
-        public EnemyShip(string name, double speed, double damage)
+        public string getName() { return name; }
+        public void setName(string newName) { name = newName; }
+
+        public abstract void makeShip();
+
+        // Because I defined the toString method in engine
+        // when it is printed the String defined in toString goes
+        // on the screen
+
+        public void followHeroShip()
         {
-            Name = name;
-            Speed = speed;
-            Damage = damage;
+            Console.WriteLine($"{name} is following the hero at {engine}");
         }
+
+        public void displayEnemyShip()
+        {
+            Console.WriteLine($"{name} is on the screen");
+        }
+
+        public void enemyShipShoots()
+        {
+            Console.WriteLine($"{name} attacks and does {weapon}");
+        }
+
+        // If any EnemyShip object is printed to screen this shows up
+
+        public string toString()
+        {
+            string infoOnShip = $"The {name} has a top speed of {engine} and an attack power of {weapon}";
+
+            return infoOnShip;
+        }
+
     }
 }

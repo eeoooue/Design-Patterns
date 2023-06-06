@@ -1,5 +1,4 @@
-﻿using Space_Ships.EnemyShips;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,20 +6,17 @@ using System.Threading.Tasks;
 
 namespace Space_Ships
 {
-    internal class EnemyShipFactory
+    // With an Abstract Factory Pattern you won't
+    // just build ships, but also all of the components
+    // for the ships
+
+    // Here is where you define the parts that are required
+    // if an object wants to be an enemy ship
+
+    public interface EnemyShipFactory
     {
-        public EnemyShip MakeEnemyShip(string shipType)
-        {
-            switch (shipType)
-            {
-                case "R":
-                    return new RocketEnemyShip();
-                case "B":
-                    return new BigUFOEnemyShip();
-                case "U":
-                default:
-                    return new UFOEnemyShip();
-            }
-        }
+        public ESWeapon addESGun();
+        public ESEngine addESEngine();
+
     }
 }
