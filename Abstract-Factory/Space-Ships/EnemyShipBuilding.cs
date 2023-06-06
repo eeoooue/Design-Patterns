@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Space_Ships.BuildingContexts
+namespace Space_Ships
 {
     abstract class EnemyShipBuilding
     {

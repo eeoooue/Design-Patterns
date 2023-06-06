@@ -1,6 +1,4 @@
-﻿using Space_Ships.BuildingContexts;
-
-namespace Space_Ships
+﻿namespace Space_Ships
 {
     internal class Program
     {
