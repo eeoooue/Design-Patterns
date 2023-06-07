@@ -1,10 +1,18 @@
-﻿namespace Logistics_App
+﻿using Logistics_App.LogisticsTypes;
+
+namespace Logistics_App
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Logistics roadApp = new RoadLogistics();
+            roadApp.PlanDelivery();
+
+            Console.WriteLine();
+
+            Logistics seaApp = new SeaLogistics();
+            seaApp.PlanDelivery();
         }
     }
 }
