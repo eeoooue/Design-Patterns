@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Notification_Library
 {
-    abstract class Decorator
+    abstract class Decorator : Notifier
     {
-        private Notifier Wrappee { get; set; }
+        public Notifier Wrappee { get; set; }
 
-        public Decorator(Notifier wrappee)
+        public Decorator(Notifier wrappee) : base(wrappee.Message)
         {
             Wrappee = wrappee;
         }
-        public abstract void Send();
+        public override abstract void Send();
     }
 }
