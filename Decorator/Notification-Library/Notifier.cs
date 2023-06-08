@@ -14,5 +14,10 @@ namespace Notification_Library
         {
             Message = message;
         }
+
+        public virtual void Send()
+        {
+            Console.WriteLine(Message);
+        }
     }
 }
