@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Farm-Restaurant", "Farm-Res
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pizza", "Pizza\Pizza.csproj", "{53627017-13BF-4B57-B7FB-C2E2ECE8A20E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification-Library", "Notification-Library\Notification-Library.csproj", "{32545AA5-6BF4-43D8-AE9F-0E293C68281C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{53627017-13BF-4B57-B7FB-C2E2ECE8A20E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53627017-13BF-4B57-B7FB-C2E2ECE8A20E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53627017-13BF-4B57-B7FB-C2E2ECE8A20E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32545AA5-6BF4-43D8-AE9F-0E293C68281C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32545AA5-6BF4-43D8-AE9F-0E293C68281C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32545AA5-6BF4-43D8-AE9F-0E293C68281C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32545AA5-6BF4-43D8-AE9F-0E293C68281C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
