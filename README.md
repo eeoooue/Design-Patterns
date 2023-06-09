@@ -13,7 +13,7 @@ Learning the 'Gang of Four' design patterns.
 | Decorator | ```Structural``` | ⦿ ⦿ ⦿ ⦿ |  |
 | Facade | ```Structural``` | ⦿ ⦿ ⦿ |  |
 | Iterator | ```Behavioral``` | ⦿ ⦿ ⦿ |  |
-| Observer | ```Behavioral``` | ⦿ ⦿ ⦿ | [⦿](https://github.com/eeoooue/Tic-Tac-Toe/pull/60) |
+| Observer | ```Behavioral``` | ⦿ ⦿ ⦿ ⦿ | [⦿](https://github.com/eeoooue/Tic-Tac-Toe/pull/60) |
 | Strategy | ```Behavioral``` | ⦿ ⦿ ⦿ |  |
 | Template Method | ```Behavioral``` | ⦿ ⦿ ⦿ |  |
 
@@ -55,3 +55,4 @@ Learning the 'Gang of Four' design patterns.
 - Design Patterns: Elements of Reusable Object-Oriented Software
 - Head First Design Patterns
 - The Daily Design Pattern
+- Dive Into Design Patterns
