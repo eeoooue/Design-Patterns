@@ -55,3 +55,4 @@ Learning the 'Gang of Four' design patterns.
 - Design Patterns: Elements of Reusable Object-Oriented Software
 - Head First Design Patterns
 - The Daily Design Pattern
+- Dive Into Design Patterns
