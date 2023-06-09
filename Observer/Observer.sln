@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather-Station", "Weather-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Food-Market", "Food-Market\Food-Market.csproj", "{6B4FD8E8-5824-4D9E-A5A2-DB625131AA77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stock-Market", "Stock-Market\Stock-Market.csproj", "{41029BCA-ED59-4763-B8ED-28E377D3F2C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stock-Market", "Stock-Market\Stock-Market.csproj", "{41029BCA-ED59-4763-B8ED-28E377D3F2C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magazine-Subscriptions", "Magazine-Subscriptions\Magazine-Subscriptions.csproj", "{BBF52FAC-0711-45AE-B77E-8401381F2487}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{41029BCA-ED59-4763-B8ED-28E377D3F2C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41029BCA-ED59-4763-B8ED-28E377D3F2C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41029BCA-ED59-4763-B8ED-28E377D3F2C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBF52FAC-0711-45AE-B77E-8401381F2487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF52FAC-0711-45AE-B77E-8401381F2487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF52FAC-0711-45AE-B77E-8401381F2487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF52FAC-0711-45AE-B77E-8401381F2487}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
