@@ -14,7 +14,7 @@ Learning the 'Gang of Four' design patterns.
 | Facade | ```Structural``` | ⦿ ⦿ ⦿ |  |
 | Iterator | ```Behavioral``` | ⦿ ⦿ ⦿ |  |
 | Observer | ```Behavioral``` | ⦿ ⦿ ⦿ ⦿ | [⦿](https://github.com/eeoooue/Tic-Tac-Toe/pull/60) |
-| Strategy | ```Behavioral``` | ⦿ ⦿ ⦿ |  |
+| Strategy | ```Behavioral``` | ⦿ ⦿ ⦿ ⦿ |  |
 | Template Method | ```Behavioral``` | ⦿ ⦿ ⦿ |  |
 
 -----
