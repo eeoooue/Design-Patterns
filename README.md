@@ -12,7 +12,7 @@ Learning the 'Gang of Four' design patterns.
 | Factory Method | ```Creational``` | ⦿ ⦿ ⦿ ⦿ |  |
 | Decorator | ```Structural``` | ⦿ ⦿ ⦿ ⦿ |  |
 | Facade | ```Structural``` | ⦿ ⦿ ⦿ ⦿ |  |
-| Iterator | ```Behavioral``` | ⦿ ⦿ ⦿ |  |
+| Iterator | ```Behavioral``` | ⦿ ⦿ ⦿ ⦿ |  |
 | Observer | ```Behavioral``` | ⦿ ⦿ ⦿ ⦿ | [⦿](https://github.com/eeoooue/Tic-Tac-Toe/pull/60) |
 | Strategy | ```Behavioral``` | ⦿ ⦿ ⦿ ⦿ |  |
 | Template Method | ```Behavioral``` | ⦿ ⦿ ⦿ ⦿ |  |
