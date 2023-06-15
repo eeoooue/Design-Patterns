@@ -32,12 +32,12 @@ namespace Tree_Traversal.Iterators
 
                     if (node.Left != null)
                     {
-                        queue.Append(node.Left);
+                        queue.Enqueue(node.Left);
                     }
 
                     if (node.Right != null)
                     {
-                        queue.Append(node.Right);
+                        queue.Enqueue(node.Right);
                     }
                 }
             }
