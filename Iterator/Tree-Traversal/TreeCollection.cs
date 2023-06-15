@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tree_Traversal.Iterators;
 
 namespace Tree_Traversal
 {
@@ -17,12 +18,12 @@ namespace Tree_Traversal
 
         public Iterator GetDepthIterator()
         {
-            throw new NotImplementedException();
+            return new DepthFirstIterator(_root);
         }
 
         public Iterator GetBreadthIterator()
         {
-            throw new NotImplementedException();
+            return new BreadthFirstIterator(_root);
         }
     }
 }
