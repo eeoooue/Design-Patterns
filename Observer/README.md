@@ -1,7 +1,8 @@
 # Observer
 
-Behavioural pattern in which observer objects are notified when the subject object changes.
+The observer pattern creates a one-to-many subject-observer relationship.
+The subject maintains a list of subscribed observers, each of which can be notified when the subject changes state.
 
-To implement the pattern, the subject maintains a list of observers and provides methods for being subscribed & unsubscribed to this list.
-
-Observer classes should implement a common interface with their own Update() behaviour
+In the observer pattern we should find:
+- A **Subject** interface which outlines Notify() Register() & Unregister()
+- An **Observer** interface which outlines Update()

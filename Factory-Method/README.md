@@ -1,7 +1,13 @@
 # Factory Method
 
-Creational pattern in which we move object instantiation occuring within a class into a method.
+In the factory method pattern, we delegate object instantiation to a specific method in a class, the factory method.
 
-The objects instantiated in this method are our Products, for which we can have an abstraction / interface.
+We create an interface outlining the object and make the factory method abstract. 
 
-Our creators should implement the factory method, which returns a product. Our concrete creators can create specialized concrete products.
+We then implement the object instantiation in specific subclasses, which should be interchangeable.
+
+In the factory method pattern we should find:
+- A **Product** interface outlining behaviour of a product
+- **ConcreteProducts** which are different implementations of the product interface
+- An **AbstractCreator** containing an abstract **FactoryMethod** with a return type of **Product**
+- **ConcreteCreators** which implement this **FactoryMethod** and return a **ConcreteProduct**

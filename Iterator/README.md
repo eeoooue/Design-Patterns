@@ -1,8 +1,10 @@
 # Iterator
 
-Behavioural pattern which provides a consistent way to iterate over a collection of objects for which a common interface exists.
+The iterator pattern provides a consistent interface for iterating through different collections of a family of objects, regardless of the nature of the individual collections.
+For example, if we stored the same record object in different ArrayList, Dictionary and Tree collections, we might introduce this pattern.
 
-We might store instances of some family of objects in trees, hashtables, arrays, linked-lists etc. and might want a common way to traverse these collections.
-
-To implement the Iterator pattern we should create a method in each collection class that returns an Iterator object for traversing the collection.
-
+In the iterator pattern we should find:
+- An **Iterator** interface which outlines HasNext() and Next()
+- Some abstraction **Product** for the items stored in the different collections
+- A **Collection** interface which outlines GetIterator()
+- **ConcreteCollections** of the Products

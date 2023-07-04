@@ -2,13 +2,15 @@
 
 Creational pattern in which we use separate factory classes to create products, for which a common interface (across the different factories exists).
 
+In the abstract factory pattern, we introduce specialised factories to create specific objects of an anticipated abstraction. 
+
+This enables polymorphism and allows us to rotate between contexts at a high level of abstraction at runtime.
+
 The Abstract Factory pattern consists of
 
-- Some Abstract Products
-- An Abstract Factory 
-- Some Concrete Factories
-- Some Concrete Products
+- Some **AbstractProducts**
+- An **AbstractFactory** 
+- Some **ConcreteFactories**
+- Some **ConcreteProducts**
 
-The different concrete factories are used to create specific concrete products leveraging the common interfaces. 
 
-We can use polymorphism to swap out which concrete factory we are using when the scenario / desired products change.
